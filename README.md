@@ -147,9 +147,16 @@ Enums: `Role`, `Category`, `BookingStatus`, `PaymentType`, `PaymentStatus`.
 
 ## Screenshots
 
-<!-- TODO: add 3-4 screenshots. Suggested: style catalogue, the booking flow with the slot picker,
-     the admin dashboard with the revenue chart, the tracking page. Put files in /screenshots.
-     A recruiter scrolls before they read. -->
+![Layo Hair: landing page, navigation, and admin portal](screenshots/01-overview.png)
+
+<sub>Left to right: the customer landing page, the primary navigation (styles, gallery, booking,
+booking tracker), and the separate admin portal sign-in.</sub>
+
+<!-- TODO: three more shots would carry the technical claims above:
+     (1) the booking flow with the slot picker visible, which is the conflict-prevention logic
+     (2) the admin dashboard with the revenue chart, which is the analytics layer
+     (3) the /track page for a guest booking, which is the login-free tracking decision
+     Save them into /screenshots and add them here. -->
 
 ---
 
