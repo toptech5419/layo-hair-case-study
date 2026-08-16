@@ -147,16 +147,36 @@ Enums: `Role`, `Category`, `BookingStatus`, `PaymentType`, `PaymentStatus`.
 
 ## Screenshots
 
-![Layo Hair: landing page, navigation, and admin portal](screenshots/01-overview.png)
+![Layo Hair: landing page, navigation, and admin portal](screenshots/00-overview.png)
 
-<sub>Left to right: the customer landing page, the primary navigation (styles, gallery, booking,
-booking tracker), and the separate admin portal sign-in.</sub>
+<sub>Left to right: the customer landing page, the primary navigation, and the separate admin
+portal sign-in.</sub>
 
-<!-- TODO: three more shots would carry the technical claims above:
-     (1) the booking flow with the slot picker visible, which is the conflict-prevention logic
-     (2) the admin dashboard with the revenue chart, which is the analytics layer
-     (3) the /track page for a guest booking, which is the login-free tracking decision
-     Save them into /screenshots and add them here. -->
+### The booking flow
+
+Four steps. Every decision in the section above is visible in one of them.
+
+<table>
+<tr>
+<td width="25%"><img src="screenshots/01-choose-style.png" alt="Step 1: choose your style"></td>
+<td width="25%"><img src="screenshots/02-date-time.png" alt="Step 2: pick a date and time"></td>
+<td width="25%"><img src="screenshots/03-your-details.png" alt="Step 3: your details"></td>
+<td width="25%"><img src="screenshots/04-payment.png" alt="Step 4: secure payment"></td>
+</tr>
+<tr>
+<td valign="top"><sub><b>1. Choose your style.</b> The catalogue carries price and duration, and duration is the input the slot maths runs on.</sub></td>
+<td valign="top"><sub><b>2. Date and time.</b> Salon or home service, the settings-gated variant. Dates are filtered by working hours, blocked dates, existing bookings plus buffer, and the notice window.</sub></td>
+<td valign="top"><sub><b>3. Your details.</b> Name, email, phone. No account, no password. This is the nullable <code>customerId</code> decision as the customer experiences it.</sub></td>
+<td valign="top"><sub><b>4. Payment.</b> Booking summary, then deposit or pay in full. The deposit percentage is read from the singleton settings row, not hard-coded.</sub></td>
+</tr>
+</table>
+
+### Admin
+
+<img src="screenshots/05-admin-analytics.png" alt="Admin analytics dashboard" width="380">
+
+<sub>Booking counts, customers, average rating and completion rate, most-booked styles, and booking
+status distribution. Built with Recharts against live data.</sub>
 
 ---
 
